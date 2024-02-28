@@ -11,7 +11,7 @@ import string
 
 def func():
         r = sr.Recognizer()
-        isl_gif=['tienes preguntas', 'estás molesto', 'estás ocupada', 'tienes hambre', 'estás enfermo', 'ten cuidado',
+        prsl_gif=['tienes preguntas', 'estás molesto', 'estás ocupada', 'tienes hambre', 'estás enfermo', 'ten cuidado',
                 'nos podemos encontrar mañana', 'ya compraste los boletos', 'terminaste tus asignaciones', 'fuiste a la oficina', 'tienes dinero',
                 'deseas algo para beber', 'deseas té o café', 'ves televisión', 'no te preocupes', 'la flor es bella',
                 'buenas tardes', 'buenas noches', 'buenos días', 'felicidades', 'buena pregunta', 'comiste almuerzo', 'buen viaje',
@@ -52,7 +52,7 @@ def func():
                                         print("oops!Time To say good bye")
                                         break
                                 
-                                elif(a.lower() in isl_gif):
+                                elif(a.lower() in prsl_gif):
                                     
                                     class ImageLabel(tk.Label):
                                             def load(self, im):
@@ -92,7 +92,7 @@ def func():
                                     root = tk.Tk()
                                     lbl = ImageLabel(root)
                                     lbl.pack()
-                                    lbl.load(r'ISL_Gifs/{0}.gif'.format(a.lower()))
+                                    lbl.load(r'PRSL_Gifs/{0}.gif'.format(a.lower()))
                                     root.mainloop()
                                 else:
 
